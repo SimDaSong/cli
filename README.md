@@ -1,6 +1,4 @@
 # cli
-> 나만의 cli 만들기
-
 
 
 ## Project Stack
@@ -11,7 +9,7 @@
 
 ## Project Description
 
-### 구현한 명령어
+### Implemented Commands
 
 * cat
 * cd
@@ -29,11 +27,18 @@
 
 ### Flow Chart
 
-<img src="images/flow chart.png" width="60%">
+```mermaid
+graph TD
+    A([Start]) --> C[Print the user input message]
+    C --> D[User inputs a command]
+    D -- Command is 'exit' --> E([End])
+    D -- Command is not 'exit' --> F[Execute the appropriate action]
+    F --> C
+```
 
 
 
-### 실행 결과
+### Result
 
 <img src="images/result_1.png">
 
